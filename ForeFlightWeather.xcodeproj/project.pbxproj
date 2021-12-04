@@ -13,6 +13,11 @@
 		10DF71B1275AEACB004D8BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71AF275AEACB004D8BAA /* Main.storyboard */; };
 		10DF71B3275AEAD1004D8BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71B2275AEAD1004D8BAA /* Assets.xcassets */; };
 		10DF71B6275AEAD1004D8BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71B4275AEAD1004D8BAA /* LaunchScreen.storyboard */; };
+		10DF71BF275AEE23004D8BAA /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71BE275AEE23004D8BAA /* DataFetcher.swift */; };
+		10DF71C2275AF9F3004D8BAA /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C1275AF9F3004D8BAA /* Report.swift */; };
+		10DF71C4275AFE4F004D8BAA /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71C3275AFE4F004D8BAA /* test.json */; };
+		10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C5275B13D7004D8BAA /* Conditions.swift */; };
+		10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C7275B1411004D8BAA /* Forecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		10DF71B2275AEAD1004D8BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10DF71B5275AEAD1004D8BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DF71B7275AEAD1004D8BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DF71BE275AEE23004D8BAA /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		10DF71C1275AF9F3004D8BAA /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		10DF71C3275AFE4F004D8BAA /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		10DF71C5275B13D7004D8BAA /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
+		10DF71C7275B1411004D8BAA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		10DF71A8275AEACB004D8BAA /* ForeFlightWeather */ = {
 			isa = PBXGroup;
 			children = (
+				10DF71C0275AF9E2004D8BAA /* Models */,
+				10DF71BD275AEE16004D8BAA /* Utils */,
 				10DF71A9275AEACB004D8BAA /* AppDelegate.swift */,
 				10DF71AB275AEACB004D8BAA /* SceneDelegate.swift */,
 				10DF71AD275AEACB004D8BAA /* ViewController.swift */,
@@ -63,8 +75,27 @@
 				10DF71B2275AEAD1004D8BAA /* Assets.xcassets */,
 				10DF71B4275AEAD1004D8BAA /* LaunchScreen.storyboard */,
 				10DF71B7275AEAD1004D8BAA /* Info.plist */,
+				10DF71C3275AFE4F004D8BAA /* test.json */,
 			);
 			path = ForeFlightWeather;
+			sourceTree = "<group>";
+		};
+		10DF71BD275AEE16004D8BAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71BE275AEE23004D8BAA /* DataFetcher.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		10DF71C0275AF9E2004D8BAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71C1275AF9F3004D8BAA /* Report.swift */,
+				10DF71C5275B13D7004D8BAA /* Conditions.swift */,
+				10DF71C7275B1411004D8BAA /* Forecast.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF71B6275AEAD1004D8BAA /* LaunchScreen.storyboard in Resources */,
+				10DF71C4275AFE4F004D8BAA /* test.json in Resources */,
 				10DF71B3275AEAD1004D8BAA /* Assets.xcassets in Resources */,
 				10DF71B1275AEACB004D8BAA /* Main.storyboard in Resources */,
 			);
@@ -139,8 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF71AE275AEACB004D8BAA /* ViewController.swift in Sources */,
+				10DF71C2275AF9F3004D8BAA /* Report.swift in Sources */,
+				10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */,
 				10DF71AA275AEACB004D8BAA /* AppDelegate.swift in Sources */,
 				10DF71AC275AEACB004D8BAA /* SceneDelegate.swift in Sources */,
+				10DF71BF275AEE23004D8BAA /* DataFetcher.swift in Sources */,
+				10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
