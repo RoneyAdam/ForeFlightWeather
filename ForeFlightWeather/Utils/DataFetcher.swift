@@ -11,11 +11,12 @@ class DataFetcher {
 	
 	//Fetch Data
 	//completion: @escaping (Station) -> ()
-	func fetchData() {
-		let urlString = "https://qa.foreflight.com/weather/report/kpwm"
+	func fetchData(_ icao: String, completion: @escaping (_ requestMessage: String, _ report: Report?) -> ()) {
+		let urlString = "https://qa.foreflight.com/weather/report/\(icao)"
 		
 		guard let url = URL(string: urlString) else {
 			//TODO: Handle Error
+			completion("URL Error", nil)
 			return
 		}
 		
@@ -29,17 +30,12 @@ class DataFetcher {
 				if let status = response as? HTTPURLResponse, let data = data, status.statusCode == 200 && error == nil {
 					do {
 						let response = try JSONDecoder().decode(Response.self, from: data)
-						let conditions = response.report.forecast
-						print(conditions)
+						completion("Success", response.report)
 					} catch {
-						print("JSON Decode Error")
+						completion("Data read error", nil)
 					}
 				} else {
-					print("Session Error: \nStatus code: \(String(describing: response))\nError: \(String(describing: error))")
-					DispatchQueue.main.async {
-						//TODO: Handle error
-						print("session error")
-					}
+					completion("Invalid icao", nil)
 				}
 			}.resume()
 		}

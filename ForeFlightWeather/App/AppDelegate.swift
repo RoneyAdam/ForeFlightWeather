@@ -9,11 +9,17 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		//Set up user defaults
+		let defaults = UserDefaults.standard
+		
+		//List of locations
+		if defaults.array(forKey: "locations") == nil {
+			defaults.set(["kpwm", "kaus"], forKey: "locations")
+		}
 		return true
 	}
 

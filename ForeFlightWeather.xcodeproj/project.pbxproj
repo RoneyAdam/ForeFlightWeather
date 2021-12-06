@@ -9,31 +9,31 @@
 /* Begin PBXBuildFile section */
 		10DF71AA275AEACB004D8BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71A9275AEACB004D8BAA /* AppDelegate.swift */; };
 		10DF71AC275AEACB004D8BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71AB275AEACB004D8BAA /* SceneDelegate.swift */; };
-		10DF71AE275AEACB004D8BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71AD275AEACB004D8BAA /* ViewController.swift */; };
+		10DF71AE275AEACB004D8BAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71AD275AEACB004D8BAA /* MainViewController.swift */; };
 		10DF71B1275AEACB004D8BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71AF275AEACB004D8BAA /* Main.storyboard */; };
 		10DF71B3275AEAD1004D8BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71B2275AEAD1004D8BAA /* Assets.xcassets */; };
 		10DF71B6275AEAD1004D8BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71B4275AEAD1004D8BAA /* LaunchScreen.storyboard */; };
 		10DF71BF275AEE23004D8BAA /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71BE275AEE23004D8BAA /* DataFetcher.swift */; };
 		10DF71C2275AF9F3004D8BAA /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C1275AF9F3004D8BAA /* Report.swift */; };
-		10DF71C4275AFE4F004D8BAA /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 10DF71C3275AFE4F004D8BAA /* test.json */; };
 		10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C5275B13D7004D8BAA /* Conditions.swift */; };
 		10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C7275B1411004D8BAA /* Forecast.swift */; };
+		10DF71D0275C7C35004D8BAA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71CF275C7C35004D8BAA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10DF71A6275AEACB004D8BAA /* ForeFlightWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeFlightWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF71A9275AEACB004D8BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DF71AB275AEACB004D8BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10DF71AD275AEACB004D8BAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10DF71AD275AEACB004D8BAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10DF71B0275AEACB004D8BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10DF71B2275AEAD1004D8BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10DF71B5275AEAD1004D8BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DF71B7275AEAD1004D8BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DF71BE275AEE23004D8BAA /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		10DF71C1275AF9F3004D8BAA /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
-		10DF71C3275AFE4F004D8BAA /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		10DF71C5275B13D7004D8BAA /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		10DF71C7275B1411004D8BAA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		10DF71CF275C7C35004D8BAA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +66,12 @@
 		10DF71A8275AEACB004D8BAA /* ForeFlightWeather */ = {
 			isa = PBXGroup;
 			children = (
+				10DF71CD275B147A004D8BAA /* App */,
+				10DF71CC275B146F004D8BAA /* ViewControllers */,
+				10DF71CB275B1469004D8BAA /* Views */,
 				10DF71C0275AF9E2004D8BAA /* Models */,
 				10DF71BD275AEE16004D8BAA /* Utils */,
-				10DF71A9275AEACB004D8BAA /* AppDelegate.swift */,
-				10DF71AB275AEACB004D8BAA /* SceneDelegate.swift */,
-				10DF71AD275AEACB004D8BAA /* ViewController.swift */,
-				10DF71AF275AEACB004D8BAA /* Main.storyboard */,
 				10DF71B2275AEAD1004D8BAA /* Assets.xcassets */,
-				10DF71B4275AEAD1004D8BAA /* LaunchScreen.storyboard */,
-				10DF71B7275AEAD1004D8BAA /* Info.plist */,
-				10DF71C3275AFE4F004D8BAA /* test.json */,
 			);
 			path = ForeFlightWeather;
 			sourceTree = "<group>";
@@ -96,6 +92,42 @@
 				10DF71C7275B1411004D8BAA /* Forecast.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10DF71CB275B1469004D8BAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71CE275C7C25004D8BAA /* SwiftUI */,
+				10DF71AF275AEACB004D8BAA /* Main.storyboard */,
+				10DF71B4275AEAD1004D8BAA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10DF71CC275B146F004D8BAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71AD275AEACB004D8BAA /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10DF71CD275B147A004D8BAA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71A9275AEACB004D8BAA /* AppDelegate.swift */,
+				10DF71AB275AEACB004D8BAA /* SceneDelegate.swift */,
+				10DF71B7275AEAD1004D8BAA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		10DF71CE275C7C25004D8BAA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				10DF71CF275C7C35004D8BAA /* DetailView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF71B6275AEAD1004D8BAA /* LaunchScreen.storyboard in Resources */,
-				10DF71C4275AFE4F004D8BAA /* test.json in Resources */,
 				10DF71B3275AEAD1004D8BAA /* Assets.xcassets in Resources */,
 				10DF71B1275AEACB004D8BAA /* Main.storyboard in Resources */,
 			);
@@ -170,7 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10DF71AE275AEACB004D8BAA /* ViewController.swift in Sources */,
+				10DF71AE275AEACB004D8BAA /* MainViewController.swift in Sources */,
+				10DF71D0275C7C35004D8BAA /* DetailView.swift in Sources */,
 				10DF71C2275AF9F3004D8BAA /* Report.swift in Sources */,
 				10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */,
 				10DF71AA275AEACB004D8BAA /* AppDelegate.swift in Sources */,
@@ -327,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RFXDU636V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ForeFlightWeather/Info.plist;
+				INFOPLIST_FILE = ForeFlightWeather/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -355,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RFXDU636V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ForeFlightWeather/Info.plist;
+				INFOPLIST_FILE = ForeFlightWeather/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
