@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
@@ -20,8 +21,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 		locationsTableView.delegate = self
 		locationsTableView.dataSource = self
 		
-		if let userLocations = UserDefaults.standard.array(forKey: "locations") as? [String]{
-			locations = userLocations
+		if let userLocations = UserDefaults.standard.dictionary(forKey: "locations") as? [String: Report?]{
+			locations = Array(userLocations.keys)
 		}
 	}
 	
@@ -66,6 +67,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 				if let report = report {
 					DispatchQueue.main.sync {
 						self.addLocation(location, report)
+						let detailView = DetailView(report: report, name: location.uppercased())
+						self.navigationController?.pushViewController(UIHostingController(rootView: detailView), animated: true)
 					}
 				} else {
 					DispatchQueue.main.sync {

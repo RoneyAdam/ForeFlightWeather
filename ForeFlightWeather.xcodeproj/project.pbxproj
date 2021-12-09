@@ -18,6 +18,7 @@
 		10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C5275B13D7004D8BAA /* Conditions.swift */; };
 		10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C7275B1411004D8BAA /* Forecast.swift */; };
 		10DF71D0275C7C35004D8BAA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71CF275C7C35004D8BAA /* DetailView.swift */; };
+		10DF71D22761C869004D8BAA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71D12761C869004D8BAA /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		10DF71C5275B13D7004D8BAA /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		10DF71C7275B1411004D8BAA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		10DF71CF275C7C35004D8BAA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		10DF71D12761C869004D8BAA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				10DF71CF275C7C35004D8BAA /* DetailView.swift */,
+				10DF71D12761C869004D8BAA /* MapView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				10DF71AA275AEACB004D8BAA /* AppDelegate.swift in Sources */,
 				10DF71AC275AEACB004D8BAA /* SceneDelegate.swift in Sources */,
 				10DF71BF275AEE23004D8BAA /* DataFetcher.swift in Sources */,
+				10DF71D22761C869004D8BAA /* MapView.swift in Sources */,
 				10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
