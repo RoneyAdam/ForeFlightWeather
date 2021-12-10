@@ -19,6 +19,8 @@
 		10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71C7275B1411004D8BAA /* Forecast.swift */; };
 		10DF71D0275C7C35004D8BAA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71CF275C7C35004D8BAA /* DetailView.swift */; };
 		10DF71D22761C869004D8BAA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF71D12761C869004D8BAA /* MapView.swift */; };
+		10DF720327630A56004D8BAA /* ConditionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF720227630A56004D8BAA /* ConditionsList.swift */; };
+		10DF720527630EA8004D8BAA /* ForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF720427630EA8004D8BAA /* ForecastList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		10DF71C7275B1411004D8BAA /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		10DF71CF275C7C35004D8BAA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		10DF71D12761C869004D8BAA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		10DF720227630A56004D8BAA /* ConditionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsList.swift; sourceTree = "<group>"; };
+		10DF720427630EA8004D8BAA /* ForecastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			children = (
 				10DF71CF275C7C35004D8BAA /* DetailView.swift */,
 				10DF71D12761C869004D8BAA /* MapView.swift */,
+				10DF720227630A56004D8BAA /* ConditionsList.swift */,
+				10DF720427630EA8004D8BAA /* ForecastList.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -207,12 +213,14 @@
 				10DF71AE275AEACB004D8BAA /* MainViewController.swift in Sources */,
 				10DF71D0275C7C35004D8BAA /* DetailView.swift in Sources */,
 				10DF71C2275AF9F3004D8BAA /* Report.swift in Sources */,
+				10DF720527630EA8004D8BAA /* ForecastList.swift in Sources */,
 				10DF71C8275B1411004D8BAA /* Forecast.swift in Sources */,
 				10DF71AA275AEACB004D8BAA /* AppDelegate.swift in Sources */,
 				10DF71AC275AEACB004D8BAA /* SceneDelegate.swift in Sources */,
 				10DF71BF275AEE23004D8BAA /* DataFetcher.swift in Sources */,
 				10DF71D22761C869004D8BAA /* MapView.swift in Sources */,
 				10DF71C6275B13D7004D8BAA /* Conditions.swift in Sources */,
+				10DF720327630A56004D8BAA /* ConditionsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

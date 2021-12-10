@@ -12,6 +12,7 @@ struct DetailView: View {
 	var report: Report
 	var name: String
 	
+	@State var weatherSelection = 0
     var body: some View {
 		VStack {
 			MapView(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: report.conditions.lat, longitude: report.conditions.lon), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)))
@@ -20,15 +21,29 @@ struct DetailView: View {
 				.font(.system(size: 44))
 				.background(headerBackground)
 				.offset(y: -50)
+			Picker("Weather Type", selection: $weatherSelection) {
+				Text("Conditions").tag(0)
+				Text("Forecast").tag(1)
+			}
+			.pickerStyle(.segmented)
+			.padding()
+			.offset(y: -50)
+			if weatherSelection == 0 {
+				ConditionsList(conditions: report.conditions)
+			} else {
+				ForecastList(conditions: report.forecast.conditions)
+			}
+			
 			Spacer()
 		}
 		.onAppear {
-			print(report.conditions)
+			print(report.forecast)
 		}
     }
 	
 	var headerBackground: some View {
 		RoundedRectangle(cornerRadius: 5.0).fill(Color(UIColor.systemBackground))
+			.shadow(radius: 0.5)
 	}
 }
 

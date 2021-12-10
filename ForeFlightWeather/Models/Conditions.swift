@@ -7,7 +7,15 @@
 
 import Foundation
 
-struct Conditions: Decodable {
+struct Conditions: Decodable, Hashable {
+	static func == (lhs: Conditions, rhs: Conditions) -> Bool {
+		lhs.tempC == rhs.tempC
+	}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(tempC)
+	}
+	
 	let lat: Double
 	let lon: Double
 	let elevationFt: Double

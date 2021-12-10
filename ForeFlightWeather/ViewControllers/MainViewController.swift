@@ -21,8 +21,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 		locationsTableView.delegate = self
 		locationsTableView.dataSource = self
 		
-		if let userLocations = UserDefaults.standard.dictionary(forKey: "locations") as? [String: Report?]{
-			locations = Array(userLocations.keys)
+		if let userLocations = UserDefaults.standard.array(forKey: "locations") as? [String]{
+			locations = userLocations
 		}
 	}
 	
@@ -62,7 +62,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 	//MARK: Action functions
 	//Try to look up the location entered
 	@IBAction func submitButtonTapped(_ sender: Any) {
-		if let location = locationTextField.text {
+		if let location = locationTextField.text?.lowercased() {
 			DataFetcher().fetchData(location) { [self] responseMessage, report in
 				if let report = report {
 					DispatchQueue.main.sync {
